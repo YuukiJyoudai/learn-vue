@@ -5,7 +5,7 @@ import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 export default {
-    input: './vue2.js',
+    input: './vue.js',
     output: {
         file: 'dist/bundle.js',
         format: 'umd'
@@ -17,7 +17,7 @@ export default {
         serve({
             // 服务器启动的文件夹
             contentBase: 'dist',
-            port: '8080'
+            port: '8081'
         }),
         // watch变化的文件夹
         livereolad('./dist')
