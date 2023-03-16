@@ -100,7 +100,7 @@ export function h(tag, data = null, children = null) {
             childFlags = ChildrenFlags.KEYED_VNODES
             children = normalizeVNodes(children)
         }
-    } else if (childFlags === null) {
+    } else if (children === null) {
         childFlags = ChildrenFlags.NO_CHILDREN
     } else if (children._isVNode) {
         // 单个子节点

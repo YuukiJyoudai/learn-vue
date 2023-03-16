@@ -1,11 +1,11 @@
-{/* <template>
-  <div>
-    <span></span>
-  </div>
-</template> */}
-
-import {h} from '../vue'
-const x = 1
+import {h, Fragment} from './index.js'
+// {/* <template>
+//   <div>
+//     <span></span>
+//   </div>
+// </template> */}
 
 
+
+console.log('h', h(Fragment, null, [h('td'), h('td')]))
 
